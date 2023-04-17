@@ -1,0 +1,665 @@
+a {
+  text-decoration: none;
+  color: inherit !important;
+}
+
+ul {
+  list-style-type: none;
+}
+
+.scroll::-webkit-scrollbar {
+  overflow: auto;
+  width: 0px;
+}
+
+body {
+  position: relative;
+}
+body main {
+  height: 100vh;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+body main #section1 {
+  background-color: rgba(0, 0, 0, 0.87);
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 20;
+  height: 110px;
+}
+body main #section1 header {
+  text-transform: uppercase;
+  font-family: "Poppins", sans-serif;
+}
+body main #section1 header #ham {
+  cursor: pointer;
+}
+body main #section1 header div:nth-of-type(2) {
+  font-family: "Poppins", sans-serif;
+}
+body main #section1 header div:nth-of-type(2) > ul > li {
+  position: relative;
+  color: white;
+}
+body main #section1 header div:nth-of-type(2) > ul > li a:hover {
+  color: #DF42B1 !important;
+}
+body main #section1 header div:nth-of-type(2) > ul > li:nth-of-type(1) {
+  color: #DF42B1;
+}
+body main #section1 header div:nth-of-type(2) > ul > li:nth-of-type(2) i {
+  color: #DF42B1;
+  font-size: 0.8rem;
+  margin-left: 2px;
+}
+body main #section1 header div:nth-of-type(2) > ul > li > ul {
+  border-radius: 5px;
+  position: absolute;
+  left: -20%;
+  top: 110%;
+  width: 140px;
+  background-color: rgb(255, 255, 255);
+  height: 300px;
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.4s;
+}
+body main #section1 header div:nth-of-type(2) > ul > li > ul > li {
+  border-bottom: 1px solid rgba(58, 58, 58, 0.121);
+  color: rgb(80, 7, 80);
+  position: relative;
+}
+body main #section1 header div:nth-of-type(2) > ul > li > ul > li:last-child {
+  border-bottom: none;
+}
+body main #section1 header div:nth-of-type(2) > ul > li > ul > li:hover > ul {
+  opacity: 1;
+  visibility: visible;
+}
+body main #section1 header div:nth-of-type(2) > ul > li > ul > li > ul {
+  border-radius: 5px;
+  position: absolute;
+  left: 100%;
+  top: -10%;
+  width: 120px;
+  height: 150px;
+  background-color: rgb(255, 255, 255);
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.4s;
+}
+body main #section1 header div:nth-of-type(2) > ul > li:hover > ul {
+  opacity: 1;
+  visibility: visible;
+}
+body main #section2 {
+  font-family: "Poppins", sans-serif;
+  position: relative;
+}
+body main #section2 > div {
+  transition: 1s;
+  position: relative;
+  background-image: url(../img/bg/1.jpg.webp);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 28% 20%;
+  background-attachment: fixed;
+  height: 100%;
+}
+body main #section2 > div::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.342);
+}
+body main #section2 > div .height0 {
+  height: 0;
+  overflow: hidden !important;
+}
+body main #section2 > div > div {
+  position: relative;
+  z-index: 1;
+  transition: 1s;
+}
+body main #section2 > div > div h2 {
+  color: white;
+  font-size: 4.6rem;
+  font-weight: bold;
+  transition: 1.2s;
+  overflow: hidden !important;
+}
+body main #section2 > div > div h4 {
+  font-size: 2.2rem;
+  transition: 1s;
+  overflow: hidden !important;
+}
+body main #section2 > div > div p {
+  color: white;
+  font-size: 1.2rem;
+  font-weight: bold;
+  transition: 1.4s;
+  overflow: hidden !important;
+}
+body main #section2 > div > div > div {
+  font-size: 1.25rem;
+  transition: 1.6s;
+  overflow: hidden !important;
+}
+body main #section2 #arrowLeft {
+  position: absolute;
+  left: 5%;
+  top: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 3.5rem;
+  height: 3.5rem;
+  border: 2px solid rgba(234, 187, 226, 0.644);
+  border-radius: 50%;
+  transform: translateY(-50%);
+  z-index: 2;
+  cursor: pointer;
+}
+body main #section2 #arrowLeft i {
+  font-size: 1.1rem;
+  color: white;
+}
+body main #section2 #arrowRight {
+  cursor: pointer;
+  position: absolute;
+  right: 5%;
+  top: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 3.5rem;
+  height: 3.5rem;
+  z-index: 2;
+  border: 2px solid rgba(234, 187, 226, 0.644);
+  transform: translateY(-50%);
+  border-radius: 50%;
+}
+body main #section2 #arrowRight i {
+  font-size: 1.1rem;
+  color: white;
+}
+body main #section3 {
+  font-family: "Poppins", sans-serif;
+  background-color: #151853;
+}
+body main #section3 > div > div:nth-of-type(1) > span {
+  border-bottom: 1px solid rgba(211, 211, 211, 0.326);
+  font-size: 0.9rem;
+  color: #DF42B1;
+  text-transform: uppercase;
+}
+body main #section3 > div > div:nth-of-type(1) > h2 {
+  font-size: 2.8rem;
+  font-weight: bold;
+  color: white;
+  text-transform: uppercase;
+}
+body main #section3 > div > div:nth-of-type(1) > p {
+  font-size: 1.1rem;
+  color: white;
+}
+body main #section3 > div > div:nth-of-type(1) > div {
+  text-transform: uppercase;
+}
+body main #section3 > div > div:nth-of-type(3) {
+  margin-top: 100px !important;
+}
+body main #section3 > div > div:nth-of-type(3) span {
+  font-size: 1rem;
+  color: #DF42B1;
+}
+body main #section3 > div > div:nth-of-type(3) p {
+  color: white;
+  font-size: 1.1rem;
+  font-weight: bold;
+}
+body main #section3 > div > div:nth-of-type(4) {
+  margin-top: 100px !important;
+}
+body main #section3 > div > div:nth-of-type(4) > div {
+  border: 2px solid rgba(197, 197, 197, 0.333);
+  border-radius: 1px;
+}
+body main #section3 > div > div:nth-of-type(4) > div > span:nth-of-type(1) {
+  font-size: 3rem;
+  font-weight: bold;
+  color: white;
+  transform: translateY(0.8rem);
+}
+body main #section3 > div > div:nth-of-type(4) > div > span:nth-of-type(2) {
+  font-size: 1.1rem;
+  color: rgba(189, 189, 189, 0.742);
+}
+body main #section4 {
+  position: relative;
+  font-family: "Poppins", sans-serif;
+  background-image: linear-gradient(to top, rgb(79, 79, 198), rgb(104, 34, 104));
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+body main #section4::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.098);
+}
+body main #section4 > div > div:nth-of-type(1) {
+  color: white;
+}
+body main #section4 > div > div:nth-of-type(1) > h5 {
+  font-size: 1rem;
+}
+body main #section4 > div > div:nth-of-type(1) h2 {
+  font-size: 2rem;
+  font-weight: bold;
+}
+body main #section4 > div > div:nth-of-type(2) > div {
+  border-radius: 10px;
+  border: none;
+  position: relative;
+  overflow: hidden;
+}
+body main #section4 > div > div:nth-of-type(2) > div > img {
+  width: 100%;
+}
+body main #section4 > div > div:nth-of-type(2) > div::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0), rgba(0, 0, 0, 0.295));
+}
+body main #section4 > div > div:nth-of-type(2) > div > span {
+  transition: 0.6s linear;
+  position: absolute;
+  right: 0;
+  top: -41%;
+  width: 12%;
+  height: 40%;
+  border-radius: 0 0 0 8px;
+  background-color: #DF42B1;
+  color: white;
+}
+body main #section4 > div > div:nth-of-type(2) > div:hover > span {
+  top: 0;
+}
+body main #section4 > div > div:nth-of-type(2) > div > div {
+  width: 65%;
+  height: 30%;
+  position: absolute;
+  bottom: 0;
+  left: 5%;
+}
+body main #section4 > div > div:nth-of-type(2) > div > div > strong {
+  color: white;
+  font-size: 1.3rem;
+  font-weight: 400;
+}
+body main #section4 > div > div:nth-of-type(2) > div > div > span {
+  color: #DF42B1;
+  font-size: 1rem;
+}
+body main #section5 {
+  background-color: #151853;
+  font-family: "Poppins", sans-serif;
+}
+body main #section5 > div > div:nth-of-type(1) {
+  color: white;
+}
+body main #section5 > div > div:nth-of-type(1) > h5 {
+  font-size: 1rem;
+}
+body main #section5 > div > div:nth-of-type(1) h2 {
+  font-size: 2.2rem;
+  font-weight: bold;
+}
+body main #section5 > div > div:nth-of-type(2) {
+  color: rgb(193, 193, 193);
+}
+body main #section5 > div > div:nth-of-type(2) > div {
+  cursor: pointer;
+}
+body main #section5 > div > div:nth-of-type(2) > div span {
+  font-size: 0.95rem;
+}
+body main #section5 > div > div:nth-of-type(2) > div:nth-of-type(1) {
+  border-radius: 10px 0 0 10px;
+  background-color: #292d7b;
+  border-right: 1px solid rgb(158, 157, 157);
+}
+body main #section5 > div > div:nth-of-type(2) > div:nth-of-type(2) {
+  background-color: #292d7b;
+}
+body main #section5 > div > div:nth-of-type(2) > div:nth-of-type(3) {
+  border-radius: 0 10px 10px 0;
+  background-color: #292d7b;
+  border-left: 1px solid rgb(158, 157, 157);
+}
+body main #section5 > div > div:nth-of-type(2) > div:hover {
+  background-color: rgb(158, 157, 157);
+  color: white;
+}
+body main #section5 > div > div:nth-of-type(3) > div {
+  border: 1px solid rgb(174, 174, 174);
+  border-radius: 10px;
+  padding-bottom: 5px;
+}
+body main #section5 > div > div:nth-of-type(3) > div > span img {
+  border-radius: 50%;
+}
+body main #section5 > div > div:nth-of-type(3) > div > div:nth-of-type(1) > p {
+  color: rgb(171, 171, 171);
+}
+body main #section5 > div > div:nth-of-type(3) > div > div:nth-of-type(1) > p:nth-of-type(1) {
+  color: white;
+}
+body main #section5 > div > div:nth-of-type(3) > div > div:nth-of-type(1) > p strong {
+  color: white;
+}
+body main #section5 > div > div:nth-of-type(3) > div > div:nth-of-type(2) {
+  color: white;
+}
+body main #section5 > div > div:nth-of-type(3) > div > div:nth-of-type(2) > div:nth-of-type(1) > span:nth-of-type(1) i {
+  font-size: 0.8rem;
+}
+body main #section5 > div > div:nth-of-type(3) > div > div:nth-of-type(2) > div:nth-of-type(1) > span:nth-of-type(2) {
+  font-size: 1rem;
+}
+body main #section6 {
+  position: relative;
+  background-image: url(../img/bg/14.jpg.webp);
+  background-attachment: fixed;
+  background-position: 0% 30%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-family: "Poppins", sans-serif;
+}
+body main #section6::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(to right, rgba(107, 107, 190, 0.85), rgba(158, 47, 158, 0.88));
+}
+body main #section6 > div {
+  position: relative;
+  z-index: 1;
+}
+body main #section6 > div > div:nth-of-type(1) {
+  color: white;
+}
+body main #section6 > div > div:nth-of-type(1) > h5 {
+  font-size: 1rem;
+}
+body main #section6 > div > div:nth-of-type(1) h2 {
+  font-size: 2.2rem;
+  font-weight: bold;
+}
+body main #section6 > div > div > div {
+  transition: 0.4s;
+  border-radius: 10px;
+  background-color: rgb(240, 240, 240);
+}
+body main #section6 > div > div > div:hover {
+  transform: scale(1.1);
+}
+body main #section6 > div > div > div > div:nth-of-type(1) > span {
+  border-radius: 0 0 5px 5px;
+  font-size: 1.2rem;
+  background-color: #DF42B1;
+}
+body main #section6 > div > div > div > div:nth-of-type(2) > figure > figcaption {
+  font-size: 3.8rem;
+}
+body main #section6 > div > div > div > div:nth-of-type(2) > figure > figcaption > span {
+  font-size: 2rem;
+}
+body main #section6 > div > div > div > div:nth-of-type(4) > div > i {
+  font-size: 1.3rem;
+  color: #DF42B1;
+}
+body main #section6 > div > div > div > div:nth-of-type(4) > div > h6 {
+  font-size: 1.1rem;
+  color: rgb(56, 56, 56);
+}
+body main #section7 {
+  font-family: "Poppins", sans-serif;
+  background-color: #151853;
+}
+body main #section7 > div > div:nth-of-type(1) {
+  color: white;
+}
+body main #section7 > div > div:nth-of-type(1) > h5 {
+  font-size: 1rem;
+  color: #DF42B1;
+}
+body main #section7 > div > div:nth-of-type(1) h2 {
+  font-size: 2.2rem;
+  font-weight: bold;
+}
+body main #section7 > div > div:nth-of-type(2) > div > div {
+  transition: 0.3s;
+  border: 1px solid white;
+}
+body main #section7 > div > div:nth-of-type(2) > div > div img {
+  opacity: 0.5;
+  cursor: pointer;
+}
+body main #section7 > div > div:nth-of-type(2) > div > div:hover img {
+  opacity: 1;
+}
+body main #section8 {
+  font-family: "Poppins", sans-serif;
+  background-color: #111343;
+}
+body main #section8 footer {
+  color: white;
+}
+body main #section8 footer > div > div:nth-of-type(1) > div:nth-of-type(2) > p {
+  font-size: 0.8rem;
+  color: rgba(228, 227, 227, 0.833);
+}
+body main #section8 footer > div > div:nth-of-type(1) > div:nth-of-type(3) a {
+  width: 2.1rem;
+  height: 2.1rem;
+  display: flex;
+  border: 1px solid rgba(200, 200, 200, 0.5);
+  border-radius: 50%;
+}
+body main #section8 footer > div > div:nth-of-type(2) > div {
+  color: rgba(228, 227, 227, 0.833);
+  font-size: 0.8rem;
+}
+body main #section8 footer > div > div:nth-of-type(2) > div:nth-of-type(1) span {
+  font-size: 1.2rem;
+  color: white;
+}
+body main #section8 footer > div > div:nth-of-type(2) > div i {
+  font-size: 16px;
+}
+body main #section8 footer > div > div:nth-of-type(3) > div {
+  color: rgba(228, 227, 227, 0.833);
+  font-size: 0.8rem;
+}
+body main #section8 footer > div > div:nth-of-type(3) > div:nth-of-type(1) span {
+  font-size: 1.2rem;
+  color: white;
+}
+body main #section8 footer > div > div:nth-of-type(3) > div i {
+  font-size: 16px;
+}
+body main #section8 footer > div > div:nth-of-type(4) > div img {
+  border-radius: 10px;
+}
+body main #section8 footer > div:nth-of-type(2) > p {
+  font-size: 1rem;
+  font-weight: 300;
+  color: rgba(239, 239, 239, 0.765);
+}
+body main #section8 footer > div:nth-of-type(2) > p i {
+  font-size: 1rem;
+}
+body main #section8 footer > div:nth-of-type(2) > p strong {
+  font-size: 1rem;
+  font-weight: 400;
+  color: white;
+}
+body main #anim2-1-1, body main #anim2-2-1, body main #anim2-2-2, body main #anim2-2-3, body main #anim2-3-1, body main #anim2-3-2, body main #anim2-3-3, body main #anim3-1-1, body main #anim3-1-2, body main #anim3-2-1, body main #anim3-2-2, body main #anim3-2-3, body main #anim3-2-4, body main #anim4-1-1, body main #anim5-1-1, body main #anim5-2-1, body main #anim2-3-4 {
+  transform: translateY(500px);
+  opacity: 0;
+}
+body main #anim1-1-1, body main #anim1-1-2, body main #anim1-2-1, body main #anim1-2-2 {
+  transform: translateY(10px);
+  opacity: 0;
+}
+body main #anim4-2-1 {
+  transform: translateX(-500px);
+  opacity: 0;
+}
+body main #anim4-2-2 {
+  transform: translateY(500px);
+  opacity: 0;
+}
+body main #anim4-2-3 {
+  transform: translateX(500px);
+  opacity: 0;
+}
+body #lMenu {
+  font-family: "Poppins", sans-serif;
+  position: fixed;
+  left: -165px;
+  top: 0;
+  width: 160px;
+  height: 100%;
+  z-index: 21;
+  background-color: rgb(240, 240, 240);
+  overflow: hidden;
+  transition: 0.5s;
+}
+body #lMenu > div:nth-of-type(1) > span {
+  cursor: pointer;
+}
+body #lMenu > div:nth-of-type(2) > ul > li:nth-of-type(1) a {
+  color: #DF42B1 !important;
+}
+body #lMenu > div:nth-of-type(2) > ul li {
+  background-color: rgba(137, 137, 137, 0.096);
+}
+body #lMenu > div:nth-of-type(2) > ul li > span {
+  cursor: pointer;
+}
+body #lMenu > div:nth-of-type(2) > ul li a:hover {
+  color: #DF42B1 !important;
+}
+body #lMenu > div:nth-of-type(3) .btn {
+  text-transform: uppercase;
+  position: relative;
+  font-family: "Poppins", sans-serif;
+  border-radius: 25px;
+  height: 30px;
+  transition: 1s;
+  color: white;
+  background-image: linear-gradient(to right, violet, rgb(125, 29, 125));
+  overflow: hidden;
+  border: none;
+  outline: none;
+}
+body #lMenu > div:nth-of-type(3) .btn > div {
+  font-size: 1rem;
+}
+body #lMenu > div:nth-of-type(3) .btn > div i {
+  margin-left: 0.18rem;
+}
+body #lMenu > div:nth-of-type(3) .btn span {
+  position: absolute;
+  left: -120%;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgb(255, 255, 255);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.5s;
+  color: rgb(109, 0, 109);
+}
+body #lMenu > div:nth-of-type(3) .btn:hover {
+  color: rgb(63, 6, 63);
+}
+body #lMenu > div:nth-of-type(3) .btn:hover span {
+  left: 0;
+}
+body #lMenu > div:nth-of-type(3) .btn:hover div {
+  position: relative;
+  z-index: 2;
+}
+body #lMenu #subLmenu {
+  height: 0;
+  overflow: hidden;
+}
+body #lMenu ._submenu {
+  height: 240px !important;
+}
+body #lMenu ._rotate {
+  transform: rotateZ(180deg);
+}
+
+.btn {
+  text-transform: uppercase;
+  position: relative;
+  font-family: "Poppins", sans-serif;
+  border-radius: 30px;
+  height: 45px;
+  transition: 1s;
+  color: white;
+  background-image: linear-gradient(to right, violet, rgb(125, 29, 125));
+  overflow: hidden;
+  border: none;
+  outline: none;
+}
+.btn > div {
+  font-size: 0.8rem;
+}
+.btn > div i {
+  margin-left: 0.18rem;
+}
+.btn > span {
+  position: absolute;
+  left: -120%;
+  top: -5px;
+  width: 100%;
+  height: 125%;
+  background-color: rgb(255, 255, 255);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.5s;
+  color: rgb(109, 0, 109);
+}
+.btn:hover {
+  color: rgb(63, 6, 63);
+}
+.btn:hover span {
+  left: 0;
+}
+.btn:hover div {
+  position: relative;
+  z-index: 2;
+}/*# sourceMappingURL=global.css.map */
